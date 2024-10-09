@@ -1,4 +1,5 @@
 import { Category } from "../models/category.js";
+import { Product } from "../models/product.js";
 
 export const getCategories = async (request, response) => {
   const categories = await Category.find();
@@ -98,6 +99,8 @@ export const deleteCategory = async (request, response) => {
          if(!deletedCategory) {
             return response.sendStatus(404)
          }
+
+         await Product.deleteMany({category: id})
 
          return response.status(200).json({message: "Category deleted"})
 

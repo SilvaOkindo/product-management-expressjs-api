@@ -17,7 +17,7 @@ app.use("/api/v1", useRouter);
 app.use("/api/v1", categoryRouter);
 
 // product routes
-app.use("api/v1", productRouter);
+app.use("/api/v1", productRouter);
 
 // db
 
