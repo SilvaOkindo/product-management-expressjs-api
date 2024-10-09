@@ -7,7 +7,6 @@ import {
   updateUser,
   deleteUser,
 } from "../controllers/userController.js";
-import { verifyToken } from "../middleware/verify-token.js";
 
 export const useRouter = Router();
 

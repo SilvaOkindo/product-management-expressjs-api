@@ -75,6 +75,8 @@ export const getUserById = async (request, response) => {
   }
 };
 
-export const deleteUser = (request, response) => {};
+export const deleteUser = (request, response) => {
+  
+};
 
 export const updateUser = (request, response) => {};
